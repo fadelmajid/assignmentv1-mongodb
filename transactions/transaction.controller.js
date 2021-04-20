@@ -26,7 +26,7 @@ async function topup(req, res, next) {
             type: "topup"
         }
 
-        const updatedUser = await userService.update(user.user_id, { balance : data.balance_after })
+        const updatedUser = await userService.update(req.user.sub, { balance : data.balance_after })
 
         if(updatedUser){
             data.status = "SUCCESS"
@@ -78,7 +78,7 @@ async function transfer(req, res, next) {
             remarks: remarks
         }
 
-        const updatedUser = await userService.update(user.user_id, { balance : data.balance_after })
+        const updatedUser = await userService.update(req.user.sub, { balance : data.balance_after })
 
 
         const data_target = {
@@ -91,7 +91,7 @@ async function transfer(req, res, next) {
             remarks: remarks + '. transferred from : ' + user.user_id 
         }
         
-        const updatedTargetUser = await userService.update(target_data.user_id, { balance : data_target.balance_after })
+        const updatedTargetUser = await userService.update(target_data.id, { balance : data_target.balance_after })
 
         if(updatedUser && updatedTargetUser){
             data.status = "SUCCESS"
@@ -129,7 +129,7 @@ async function pay(req, res, next) {
             remarks: remarks
         }
 
-        const updatedUser = await userService.update(user.user_id, { balance : data.balance_after })
+        const updatedUser = await userService.update(req.user.sub, { balance : data.balance_after })
 
         if(updatedUser){
             data.status = "SUCCESS"

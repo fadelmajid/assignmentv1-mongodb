@@ -1,0 +1,54 @@
+{
+	"id": "e19afcd1-e3bb-4acd-8869-2c8076c40f67",
+	"values": [
+		{
+			"key": "device-id",
+			"value": "postman",
+			"enabled": false
+		},
+		{
+			"key": "secret-key",
+			"value": "Tv2H4XmUUmyyp8Lp",
+			"enabled": false
+		},
+		{
+			"key": "platform",
+			"value": "android",
+			"enabled": false
+		},
+		{
+			"key": "access-token",
+			"value": "7e8c8e1490dbad5d988a5d5b553c99c3b8fc3efeb87dcc806c05ef225520522f",
+			"enabled": false
+		},
+		{
+			"key": "refresh-token",
+			"value": "332e4b5b69b7bf6eb1a707a4d450d893982d2491cb367aaeb2ea86fc32406bb1",
+			"enabled": false
+		},
+		{
+			"key": "app-version",
+			"value": "0.9.0",
+			"enabled": false
+		},
+		{
+			"key": "push-token",
+			"value": "e8bfcb2850f92bd333d1f261b017daf0b52651858",
+			"enabled": false
+		},
+		{
+			"key": "timestamp",
+			"value": "2019-07-30 11:28:52",
+			"enabled": false
+		},
+		{
+			"key": "access-token",
+			"value": "e77a2df1fe4211db681bae0db7a83be908562fdfc838eb640ef3292bbeb0647e",
+			"enabled": true
+		}
+	],
+	"name": "My Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2021-04-20T02:22:16.562Z",
+	"_postman_exported_using": "Postman/7.36.5"
+}
